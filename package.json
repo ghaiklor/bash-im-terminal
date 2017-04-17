@@ -1,7 +1,7 @@
 {
   "name": "bash-im-terminal",
   "version": "0.0.0-development",
-  "description": "",
+  "description": "Terminal client for viewing Bash.IM",
   "main": "src/index.js",
   "bin": {
     "bashim": "bin/bashim.js"
@@ -14,19 +14,17 @@
     "type": "git",
     "url": "https://github.com/ghaiklor/bash-im-terminal.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "ghaiklor",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/ghaiklor/bash-im-terminal/issues"
   },
   "homepage": "https://github.com/ghaiklor/bash-im-terminal#readme",
   "dependencies": {
-    "async-request": "^1.2.0",
-    "blessed": "^0.1.81",
-    "cheerio": "^0.22.0",
-    "iconv": "^2.2.3",
-    "keypress": "^0.2.1",
-    "request": "^2.81.0"
+    "blessed": "0.1.81",
+    "cheerio": "0.22.0",
+    "iconv": "2.2.3",
+    "request": "2.81.0"
   },
   "devDependencies": {
     "chai": "3.5.0",
