@@ -93,3 +93,5 @@ class Bash {
         return conv.convert(buffer);
     }
 }
+
+module.exports = Bash;

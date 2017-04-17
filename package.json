@@ -1,14 +1,15 @@
 {
   "name": "bash-im-terminal",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ghaiklor/bash-im-terminal.git"
+    "url": "https://github.com/ghaiklor/bash-im-terminal.git"
   },
   "author": "",
   "license": "ISC",
@@ -23,6 +24,20 @@
     "request": "^2.81.0"
   },
   "devDependencies": {
-    "tape-run": "^3.0.0"
+    "chai": "3.5.0",
+    "cz-conventional-changelog": "2.0.0",
+    "ghooks": "2.0.0",
+    "mocha": "3.2.0",
+    "proxyquire": "1.7.11",
+    "semantic-release": "6.3.2",
+    "sinon": "2.1.0"
+  },
+  "config": {
+    "ghooks": {
+      "pre-commit": "npm run test"
+    }
+  },
+  "czConfig": {
+    "path": "node_modules/cz-conventional-changelog"
   }
 }
