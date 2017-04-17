@@ -1,9 +1,6 @@
 const assert = require('chai').assert;
 const sinon = require('sinon');
-const proxyquire = require('proxyquire');
-
-let requestMock;
-let Quote;
+const Quote = require('../../src/Quote');
 
 const QUOTE_OPTIONS = {
   id: '1',
@@ -13,11 +10,6 @@ const QUOTE_OPTIONS = {
 };
 
 describe('Quote', () => {
-  beforeEach(() => {
-    requestMock = sinon.stub().returns(Promise.resolve({statusCode: 200}));
-    Quote = proxyquire('../../src/Quote', {request: requestMock});
-  });
-
   it('Should properly create new instance', () => {
     const quote = new Quote(QUOTE_OPTIONS);
 

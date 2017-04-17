@@ -19,8 +19,10 @@
   "homepage": "https://github.com/ghaiklor/bash-im-terminal#readme",
   "dependencies": {
     "async-request": "^1.2.0",
+    "blessed": "^0.1.81",
     "cheerio": "^0.22.0",
     "iconv": "^2.2.3",
+    "keypress": "^0.2.1",
     "request": "^2.81.0"
   },
   "devDependencies": {

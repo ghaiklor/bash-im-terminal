@@ -1,9 +1,4 @@
-const request = require('async-request');
-
 const BASE_URL = 'http://bash.im';
-const VOTE_UP_URL = id => `${BASE_URL}/quote/${id}/rulez`;
-const VOTE_DOWN_URL = id => `${BASE_URL}/quote/${id}/sux`;
-const BAYAN_URL = id => `${BASE_URL}/quote/${id}/bayan`;
 const QUOTE_URL = id => `${BASE_URL}/quote/${id}`;
 
 /**
@@ -70,45 +65,6 @@ class Quote {
    */
   getUrl() {
     return QUOTE_URL(this.getId());
-  }
-
-  /**
-   * Vote up the quote.
-   *
-   * @returns {Promise}
-   */
-  async voteUp() {
-    const id = this.getId();
-    const url = VOTE_UP_URL(id);
-    const response = await request(url, {method: 'POST', data: {quote: id, act: 'rulez'}});
-
-    return response.statusCode === 200;
-  }
-
-  /**
-   * Vote down the quote.
-   *
-   * @returns {Promise}
-   */
-  async voteDown() {
-    const id = this.getId();
-    const url = VOTE_DOWN_URL(id);
-    const response = await request(url, {method: 'POST', data: {quote: id, act: 'sux'}});
-
-    return response.statusCode === 200;
-  }
-
-  /**
-   * Mark the quote as bayan.
-   *
-   * @returns {Promise}
-   */
-  async bayan() {
-    const id = this.getId();
-    const url = BAYAN_URL(id);
-    const response = await request(url, {method: 'POST', data: {quote: id, act: 'bayan'}});
-
-    return response.statusCode === 200;
   }
 }
 
