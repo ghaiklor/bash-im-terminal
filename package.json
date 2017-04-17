@@ -17,8 +17,12 @@
   },
   "homepage": "https://github.com/ghaiklor/bash-im-terminal#readme",
   "dependencies": {
+    "async-request": "^1.2.0",
     "cheerio": "^0.22.0",
     "iconv": "^2.2.3",
     "request": "^2.81.0"
+  },
+  "devDependencies": {
+    "tape-run": "^3.0.0"
   }
 }
