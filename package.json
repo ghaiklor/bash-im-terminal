@@ -1,0 +1,24 @@
+{
+  "name": "bash-im-terminal",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ghaiklor/bash-im-terminal.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ghaiklor/bash-im-terminal/issues"
+  },
+  "homepage": "https://github.com/ghaiklor/bash-im-terminal#readme",
+  "dependencies": {
+    "cheerio": "^0.22.0",
+    "iconv": "^2.2.3",
+    "request": "^2.81.0"
+  }
+}
