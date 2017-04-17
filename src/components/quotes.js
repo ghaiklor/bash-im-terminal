@@ -12,10 +12,18 @@ const quotes = blessed.box({
   align: 'center',
   valign: 'middle',
   width: '100%',
-  height: 'shrink',
+  height: '100%-4',
+  shrink: true,
+  scrollable: true,
+  alwaysScroll: true,
+  scrollbar: {
+    style: {
+      bg: 'red'
+    }
+  },
   content: 'Loading...',
   left: 'left',
-  top: 3
+  top: 2
 });
 
 module.exports = quotes;

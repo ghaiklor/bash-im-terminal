@@ -13,7 +13,7 @@ const header = blessed.box({
   valign: 'middle',
   width: '100%',
   height: 3,
-  content: 'Bash.IM',
+  content: 'Bash.IM (http://bash.im)',
   left: 'left',
   top: 'top'
 });
