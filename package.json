@@ -33,11 +33,11 @@
     "sinon": "2.1.0"
   },
   "config": {
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
+    },
     "ghooks": {
       "pre-commit": "npm run test"
     }
-  },
-  "czConfig": {
-    "path": "node_modules/cz-conventional-changelog"
   }
 }
