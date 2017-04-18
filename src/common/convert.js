@@ -3,10 +3,10 @@ const iconv = require('iconv');
 /**
  * Convert from one encoding to another one.
  *
- * @param {Buffer} body Content you want to convert
+ * @param {Buffer|String} body Content you want to convert, in binary format
  * @param {String} [from=windows-1251]
  * @param {String} [to=utf8]
- * @returns {String}
+ * @returns {String} Returns converted string
  */
 module.exports = function (body, from = 'windows-1251', to = 'utf8') {
   const conv = new iconv.Iconv(from, to);
