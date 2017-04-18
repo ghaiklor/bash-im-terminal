@@ -8,7 +8,6 @@ const cheerio = require('cheerio');
  */
 module.exports = function (html) {
   const $ = cheerio.load(html);
-  const pager = $('.pager').find('.current').find('input');
 
-  return pager.val();
+  return parseInt($('.pager').find('.current').find('input').val());
 };

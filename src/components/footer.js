@@ -9,12 +9,12 @@ const footer = blessed.box({
   style: {
     fg: 'red',
   },
-  align: 'left',
+  align: 'right',
   valign: 'middle',
-  width: '100%',
+  width: '100%-9',
   height: 3,
-  content: 'Up/Down - scroll | R - Next | Q - Quit | Github: http://github.com/ghaiklor/bash-im-terminal',
-  left: 'left',
+  content: 'Up/Down - Scroll | Left/Right - Pages | R - Random | H - Home | Q - Quit | http://github.com/ghaiklor/bash-im-terminal',
+  right: 0,
   bottom: 0
 });
 
