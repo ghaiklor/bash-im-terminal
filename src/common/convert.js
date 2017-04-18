@@ -1,16 +1,14 @@
-const iconv = require('iconv');
+const iconv = require('iconv-lite');
 
 /**
  * Convert from one encoding to another one.
  *
  * @param {Buffer|String} body Content you want to convert, in binary format
- * @param {String} [from=windows-1251]
- * @param {String} [to=utf8]
+ * @param {String} [from=win1251]
  * @returns {String} Returns converted string
  */
-module.exports = function (body, from = 'windows-1251', to = 'utf8') {
-  const conv = new iconv.Iconv(from, to);
+module.exports = function (body, from = 'win1251') {
   const buffer = Buffer.from(body, 'binary');
 
-  return conv.convert(buffer);
+  return iconv.decode(buffer, from);
 };

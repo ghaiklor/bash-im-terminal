@@ -24,6 +24,7 @@
     "blessed": "0.1.81",
     "cheerio": "0.22.0",
     "iconv": "2.2.3",
+    "iconv-lite": "^0.4.15",
     "request": "2.81.0"
   },
   "devDependencies": {
