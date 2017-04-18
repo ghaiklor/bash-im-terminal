@@ -15,7 +15,7 @@ describe('common::getQuotes', () => {
     assert.equal(quotes[0].getId(), 444474);
     assert.equal(quotes[0].getText(), 'Свершилось! Яндекс почта отправила в спам письма от команды Яндекс диска)');
     assert.equal(quotes[0].getRating(), 152);
-    assert.equal(quotes[0].getDate().toUTCString(), 'Tue, 18 Apr 2017 09:46:00 GMT');
+    assert.equal(quotes[0].getDate().toDateString(), 'Tue Apr 18 2017');
     assert.equal(quotes[0].getUrl(), 'http://bash.im/quote/444474');
   });
 
@@ -34,7 +34,7 @@ describe('common::getQuotes', () => {
     assert.equal(quotes[0].getId(), 444474);
     assert.equal(quotes[0].getText(), 'Свершилось! "Яндекс" почта отправила в спам письма от команды Яндекс диска)');
     assert.equal(quotes[0].getRating(), 152);
-    assert.equal(quotes[0].getDate().toUTCString(), 'Tue, 18 Apr 2017 09:46:00 GMT');
+    assert.equal(quotes[0].getDate().toDateString(), 'Tue Apr 18 2017');
     assert.equal(quotes[0].getUrl(), 'http://bash.im/quote/444474');
   });
 });
