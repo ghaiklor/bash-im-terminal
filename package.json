@@ -23,15 +23,13 @@
   "dependencies": {
     "blessed": "0.1.81",
     "cheerio": "0.22.0",
-    "he": "^1.1.1",
-    "iconv": "2.2.3",
-    "iconv-lite": "^0.4.15",
+    "he": "1.1.1",
+    "iconv-lite": "0.4.15",
     "request": "2.81.0"
   },
   "devDependencies": {
     "chai": "3.5.0",
     "cz-conventional-changelog": "2.0.0",
-    "ghooks": "2.0.0",
     "mocha": "3.2.0",
     "proxyquire": "1.7.11",
     "semantic-release": "6.3.2",
@@ -40,9 +38,6 @@
   "config": {
     "commitizen": {
       "path": "node_modules/cz-conventional-changelog"
-    },
-    "ghooks": {
-      "pre-commit": "npm run test"
     }
   }
 }
